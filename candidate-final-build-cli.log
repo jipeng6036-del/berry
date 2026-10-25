@@ -1,0 +1,37 @@
+➤ YN0000: ┌ Building the CLI
+➤ YN0000: │ ../yarnpkg-core/sources/miscUtils.ts:336:33
+➤ YN0000: │    ↳ Using direct eval with a bundler is not recommended and may cause problems
+➤ YN0000: │ ../yarnpkg-core/sources/miscUtils.ts:357:26
+➤ YN0000: │    ↳ Using direct eval with a bundler is not recommended and may cause problems
+➤ YN0000: └ Completed in 5s 15ms
+
+➤ YN0000: ✓ Done building the CLI!
+➤ YN0000: ? Bundle path: F:\Github-PR\inspection\heartbeat1111-yarn-http-forward-proxy\packages\yarnpkg-cli\bundles\yarn.js
+➤ YN0000: ? Bundle size: 3.6 MiB
+➤ YN0000: ? Bundle version: 4.18.1-git.20261023.hash-ef16bb2
+
+➤ YN0000: → @yarnpkg/plugin-essentials
+➤ YN0000: → @yarnpkg/plugin-catalog
+➤ YN0000: → @yarnpkg/plugin-compat
+➤ YN0000: → @yarnpkg/plugin-constraints
+➤ YN0000: → @yarnpkg/plugin-dlx
+➤ YN0000: → @yarnpkg/plugin-exec
+➤ YN0000: → @yarnpkg/plugin-file
+➤ YN0000: → @yarnpkg/plugin-git
+➤ YN0000: → @yarnpkg/plugin-github
+➤ YN0000: → @yarnpkg/plugin-http
+➤ YN0000: → @yarnpkg/plugin-init
+➤ YN0000: → @yarnpkg/plugin-interactive-tools
+➤ YN0000: → @yarnpkg/plugin-jsr
+➤ YN0000: → @yarnpkg/plugin-link
+➤ YN0000: → @yarnpkg/plugin-nm
+➤ YN0000: → @yarnpkg/plugin-npm
+➤ YN0000: → @yarnpkg/plugin-npm-cli
+➤ YN0000: → @yarnpkg/plugin-pack
+➤ YN0000: → @yarnpkg/plugin-patch
+➤ YN0000: → @yarnpkg/plugin-pnp
+➤ YN0000: → @yarnpkg/plugin-pnpm
+➤ YN0000: → @yarnpkg/plugin-stage
+➤ YN0000: → @yarnpkg/plugin-typescript
+➤ YN0000: → @yarnpkg/plugin-version
+➤ YN0000: → @yarnpkg/plugin-workspace-tools

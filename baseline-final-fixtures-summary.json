@@ -1,0 +1,21 @@
+{
+  "command": "TEST_BINARY=<original CLI> node scripts/run-yarn.js test:integration proxy.test --runInBand -t forward-only",
+  "exitCode": 1,
+  "total": 9,
+  "passed": 0,
+  "failed": 2,
+  "filteredOut": 7,
+  "rawJsonSha256": "09abe455ebe8d87fa88aefc83f2eb98bf62f8e1e29aad9bce38c7af0e333943c",
+  "assertions": [
+    {
+      "name": "Proxy tests it should install packages from an HTTP server through a forward-only HTTP proxy",
+      "status": "failed",
+      "expectedErrorObserved": true
+    },
+    {
+      "name": "Proxy tests it should install packages from an HTTP server through a forward-only HTTPS proxy",
+      "status": "failed",
+      "expectedErrorObserved": true
+    }
+  ]
+}

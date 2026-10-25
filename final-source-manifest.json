@@ -1,0 +1,48 @@
+{
+  "at": "2026-10-25T12:08:13.136178+00:00",
+  "base": "ef16bb2e5826f2b4c342f387e4ac50fea86d4a51",
+  "branch": "fix/http-forward-proxy-for-http-registries",
+  "files": {
+    "packages/yarnpkg-core/sources/httpUtils.ts": {
+      "bytes": 12092,
+      "sha256": "a84fb9dacac49e517b30082e06fe39f165cdcf5083bbd57eb510e824149ae192",
+      "gitBlob": "e10143204d1e3512eed659a6a25b14c497e07194"
+    },
+    "packages/yarnpkg-core/package.json": {
+      "bytes": 2552,
+      "sha256": "ff3fbc77a5c5b4c01abb2656c551c847380246552ef0a59b53c8b8a89dbcc6ea",
+      "gitBlob": "3177343a848c63b400779e1263cbe78c1a551016"
+    },
+    "packages/acceptance-tests/pkg-tests-core/sources/utils/tests.ts": {
+      "bytes": 44318,
+      "sha256": "1893e71a7ac765ebb3e11f6054a87bd33184c5764ae38632289a6fa3201731be",
+      "gitBlob": "9ba9e3aea4bf8be8df710490c817a4efb2428f1c"
+    },
+    "packages/acceptance-tests/pkg-tests-specs/sources/proxy.test.ts": {
+      "bytes": 8209,
+      "sha256": "da99676622851eef2fe82804a507b5d824bd579d74eed47fc19dbe6899d959d0",
+      "gitBlob": "0c82db9b3880c29ca39642276255ff2255bc2dd6"
+    },
+    ".pnp.cjs": {
+      "bytes": 2625570,
+      "sha256": "c672bf304f28e40ce9e15b811a18f46e4da57b9ff262267de6bc507588bcbea2",
+      "gitBlob": "1e314839595da837fc4c453b681932a6e8336619"
+    },
+    "yarn.lock": {
+      "bytes": 810141,
+      "sha256": "f66f4248be5ec8b9267446b8de126064d489d2dcac45b1cd25881ef9ec4cd75a",
+      "gitBlob": "ae9b6ef6c1bf3db79f203913be20a89f00eb1f08"
+    },
+    ".yarn/versions/ec13895f.yml": {
+      "bytes": 927,
+      "sha256": "aca6af1dacbe2bd3a9f25002140d29cea267d33bf3120e12026ef2b8516fd938",
+      "gitBlob": "dbd3afe688dd467c6da623528de0b5300a4e4a6f"
+    }
+  },
+  "generatedWorkerPending": false,
+  "workerSha256": "3495e1cbc70687b44c9c40dd77f92c0f9c8786d476dedb1a9029b3cf473f6f67",
+  "uncommitted": true,
+  "filesCount": 7,
+  "candidateBundleSha256": "8727b7fd12faf2baa403fa999bc81e928aebd3a8f34a7bccecdeb5321dca5cdb",
+  "portableHarnessSha256": "f5d5f4f8a81af7a6bc13a03afee19a4f2d3840fdd5359121098267166d24aa44"
+}

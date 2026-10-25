@@ -1,0 +1,38 @@
+{
+  "label": "baseline-committed-proof",
+  "mode": "basic",
+  "command": [
+    "E:\\Nodejs\\node.exe",
+    "F:\\Github-PR\\ci-evidence\\heartbeat1111-runtime-local\\runtime.cjs",
+    "baseline-committed-proof",
+    "F:\\Github-PR\\ci-evidence\\heartbeat1111-runtime-local\\baseline-yarn.cjs"
+  ],
+  "harnessSha256": "f5d5f4f8a81af7a6bc13a03afee19a4f2d3840fdd5359121098267166d24aa44",
+  "bundle": "F:\\Github-PR\\ci-evidence\\heartbeat1111-runtime-local\\baseline-yarn.cjs",
+  "bundleSha256": "7ea8c970c4a1b55d42ff0803f30933382613f329fd916f7d3552017e323fe1f8",
+  "node": "v24.14.0",
+  "parentPid": 16136,
+  "packageSha256": "b471d4b6940961fa08e443ff58847a15d4cbed0fd47586795c0fd3b347f87b49",
+  "registryPort": 1104,
+  "proxyPort": 1105,
+  "childPid": 61040,
+  "exitCode": 1,
+  "signal": null,
+  "stdout": "{\"type\":\"info\",\"name\":0,\"displayName\":\"YN0000\",\"indent\":\"· \",\"data\":\"Yarn 4.18.1-git.20261023.hash-ef16bb2\"}\n{\"type\":\"info\",\"name\":null,\"displayName\":\"YN0000\",\"indent\":\"\",\"data\":\"┌ Resolution step\"}\n{\"type\":\"error\",\"name\":1,\"displayName\":\"YN0001\",\"indent\":\"│ \",\"data\":\"RequestError: Bad response: 501\\n    at ClientRequest.<anonymous> (F:\\\\Github-PR\\\\ci-evidence\\\\heartbeat1111-runtime-local\\\\baseline-yarn.cjs:148:14258)\\n    at Object.onceWrapper (node:events:623:26)\\n    at ClientRequest.emit (node:events:520:35)\\n    at l.emit (F:\\\\Github-PR\\\\ci-evidence\\\\heartbeat1111-runtime-local\\\\baseline-yarn.cjs:143:22975)\\n    at emitErrorEvent (node:_http_client:108:11)\\n    at _destroy (node:_http_client:963:9)\\n    at onSocketNT (node:_http_client:983:5)\\n    at process.processTicksAndRejections (node:internal/process/task_queues:91:21)\\n    at ClientRequest.<anonymous> (F:\\\\Github-PR\\\\ci-evidence\\\\heartbeat1111-runtime-local\\\\baseline-yarn.cjs:143:7786)\\n    at Object.onceWrapper (node:events:623:26)\\n    at ClientRequest.emit (node:events:508:28)\\n    at Socket.socketOnData (node:_http_client:655:11)\\n    at Socket.emit (node:events:508:28)\\n    at addChunk (node:internal/streams/readable:563:12)\\n    at readableAddChunkPushByteMode (node:internal/streams/readable:514:3)\\n    at Readable.push (node:internal/streams/readable:394:5)\\n    at TCP.onStreamRead (node:internal/stream_base_commons:189:23)\"}\n{\"type\":\"info\",\"name\":null,\"displayName\":\"YN0000\",\"indent\":\"\",\"data\":\"└ Completed\"}\n{\"type\":\"error\",\"name\":0,\"displayName\":\"YN0000\",\"indent\":\"· \",\"data\":\"Failed with errors in 0s 24ms\"}\n",
+  "stderr": "",
+  "registryRequests": [],
+  "proxyRequests": [
+    {
+      "method": "CONNECT",
+      "url": "127.0.0.1:1104",
+      "headers": {
+        "connection": "close",
+        "host": "127.0.0.1:1104"
+      }
+    }
+  ],
+  "proxyCredentialsWereForwarded": false,
+  "proxyAuthenticationMatched": true,
+  "serversClosed": true,
+  "expectedBehaviorVerified": true
+}

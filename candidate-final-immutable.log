@@ -1,0 +1,19 @@
+➤ YN0000: · Yarn 4.18.1-dev
+➤ YN0000: ┌ Resolution step
+➤ YN0000: └ Completed in 0s 219ms
+➤ YN0000: ┌ Post-resolution validation
+➤ YN0060: │ eslint is listed by your project with version 9.20.1 (pa9c2fa), which doesn't satisfy what eslint-plugin-arca and other dependencies request (but they have non-overlapping ranges!).
+➤ YN0060: │ eslint is listed by your project with version 9.20.1 (pbf2700), which doesn't satisfy what eslint-plugin-arca (via @yarnpkg/eslint-config) and other dependencies request (but they have non-overlapping ranges!).
+➤ YN0060: │ monaco-editor is listed by your project with version 0.24.0 (pd2ce98), which doesn't satisfy what @monaco-editor/react requests (^0.25.0).
+➤ YN0060: │ react is listed by your project with version 19.1.0 (pee9f64), which doesn't satisfy what react-select-virtualized and other dependencies request (but they have non-overlapping ranges!).
+➤ YN0060: │ react-dom is listed by your project with version 19.1.0 (p70f303), which doesn't satisfy what react-select-virtualized and other dependencies request (^18.3.1).
+➤ YN0060: │ typescript is listed by your project with version 5.9.2 (p5827dc), which doesn't satisfy what typedoc and other dependencies request (~5.0.0 || ~5.1.0 || ~5.2.0 || ~5.3.0).
+➤ YN0086: │ Some peer dependencies are incorrectly met by your project; run yarn explain peer-requirements <hash> for details, where <hash> is the six-letter p-prefixed code.
+➤ YN0086: │ Some peer dependencies are incorrectly met by dependencies; run yarn explain peer-requirements for details.
+➤ YN0000: └ Completed
+➤ YN0000: ┌ Fetch step
+➤ YN0000: └ Completed in 0s 414ms
+➤ YN0000: ┌ Link step
+➤ YN0092: │ ESM support for PnP uses the experimental loader API and is therefore experimental
+➤ YN0000: └ Completed
+➤ YN0000: · Done with warnings in 1s 9ms

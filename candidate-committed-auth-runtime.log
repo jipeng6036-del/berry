@@ -1,0 +1,18 @@
+{
+  "label": "candidate-committed-auth",
+  "exitCode": 0,
+  "probe": "{\"message\":\"installed through the forward proxy\"}",
+  "proxyMethods": [
+    "GET",
+    "GET",
+    "GET"
+  ],
+  "registryPaths": [
+    "/forward-proxy-fixture",
+    "/metadata/forward-proxy-fixture",
+    "/tarball/package.tgz"
+  ],
+  "bundleSha256": "fde7c8f01a3778046a6b60971748cf286193dfa78a4de43a8bb310e40fa74b3f",
+  "packageSha256": "b471d4b6940961fa08e443ff58847a15d4cbed0fd47586795c0fd3b347f87b49",
+  "serversClosed": true
+}

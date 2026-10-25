@@ -1,0 +1,20 @@
+PASS packages/yarnpkg-core/tests/tgzUtils.test.ts
+PASS packages/yarnpkg-core/tests/Configuration.test.ts
+PASS packages/yarnpkg-core/tests/Project.test.ts
+PASS packages/yarnpkg-core/tests/scriptUtils.test.ts
+PASS packages/yarnpkg-core/tests/formatUtils.test.ts
+PASS packages/yarnpkg-core/tests/miscUtils.test.ts
+PASS packages/yarnpkg-core/tests/httpUtils.test.ts
+PASS packages/yarnpkg-core/tests/LegacyMigrationResolver.test.ts
+PASS packages/yarnpkg-core/tests/TelemetryManager.test.ts
+PASS packages/yarnpkg-core/tests/Manifest.test.ts
+PASS packages/yarnpkg-core/tests/semverUtils.test.ts
+PASS packages/yarnpkg-core/tests/RefCountedCache.test.ts
+PASS packages/yarnpkg-core/tests/configUtils.test.ts
+
+Test Suites: 13 passed, 13 total
+Tests:       164 passed, 164 total
+Snapshots:   0 total
+Time:        5.036 s, estimated 6 s
+Ran all test suites matching /yarnpkg-core/i.
+Test results written to: ..\..\ci-evidence\heartbeat1111-runtime-local\candidate-frozen-core-unit.json

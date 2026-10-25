@@ -1,0 +1,9 @@
+PASS packages/acceptance-tests/pkg-tests-specs/sources/proxy.test.ts (10.592 s)
+PASS packages/acceptance-tests/pkg-tests-specs/sources/https.test.js (5.721 s)
+
+Test Suites: 2 passed, 2 total
+Tests:       16 passed, 16 total
+Snapshots:   0 total
+Time:        16.407 s
+Ran all test suites matching /proxy.test|https.test/i.
+Test results written to: ..\..\ci-evidence\heartbeat1111-runtime-local\candidate-committed-proxy-https.json

@@ -1,0 +1,100 @@
+{
+  "label": "candidate-committed-auth",
+  "mode": "auth-redirect",
+  "command": [
+    "E:\\Nodejs\\node.exe",
+    "F:\\Github-PR\\ci-evidence\\heartbeat1111-runtime-local\\runtime.cjs",
+    "candidate-committed-auth",
+    "F:\\Github-PR\\ci-evidence\\heartbeat1111-runtime-local\\candidate-committed-yarn.cjs",
+    "auth-redirect"
+  ],
+  "harnessSha256": "f5d5f4f8a81af7a6bc13a03afee19a4f2d3840fdd5359121098267166d24aa44",
+  "bundle": "F:\\Github-PR\\ci-evidence\\heartbeat1111-runtime-local\\candidate-committed-yarn.cjs",
+  "bundleSha256": "fde7c8f01a3778046a6b60971748cf286193dfa78a4de43a8bb310e40fa74b3f",
+  "node": "v24.14.0",
+  "parentPid": 67388,
+  "packageSha256": "b471d4b6940961fa08e443ff58847a15d4cbed0fd47586795c0fd3b347f87b49",
+  "registryPort": 1117,
+  "proxyPort": 1118,
+  "childPid": 49884,
+  "exitCode": 0,
+  "signal": null,
+  "stdout": "{\"type\":\"info\",\"name\":0,\"displayName\":\"YN0000\",\"indent\":\"· \",\"data\":\"Yarn 4.18.1-git.20261025.hash-f1f3454\"}\n{\"type\":\"info\",\"name\":null,\"displayName\":\"YN0000\",\"indent\":\"\",\"data\":\"┌ Resolution step\"}\n{\"type\":\"info\",\"name\":85,\"displayName\":\"YN0085\",\"indent\":\"│ \",\"data\":\"+ forward-proxy-fixture@npm:1.0.0::__archiveUrl=http%3A%2F%2F127.0.0.1%3A1117%2Ftarball%2Fpackage.tgz\"}\n{\"type\":\"info\",\"name\":null,\"displayName\":\"YN0000\",\"indent\":\"\",\"data\":\"└ Completed\"}\n{\"type\":\"info\",\"name\":null,\"displayName\":\"YN0000\",\"indent\":\"\",\"data\":\"┌ Fetch step\"}\n{\"type\":\"info\",\"name\":13,\"displayName\":\"YN0013\",\"indent\":\"│ \",\"data\":\"A package was added to the project (+ 0.71 KiB).\"}\n{\"type\":\"info\",\"name\":null,\"displayName\":\"YN0000\",\"indent\":\"\",\"data\":\"└ Completed\"}\n{\"type\":\"info\",\"name\":null,\"displayName\":\"YN0000\",\"indent\":\"\",\"data\":\"┌ Link step\"}\n{\"type\":\"info\",\"name\":null,\"displayName\":\"YN0000\",\"indent\":\"\",\"data\":\"└ Completed\"}\n{\"type\":\"info\",\"name\":0,\"displayName\":\"YN0000\",\"indent\":\"· \",\"data\":\"Done in 0s 220ms\"}\n",
+  "stderr": "",
+  "probeExit": 0,
+  "probeOutput": "{\"message\":\"installed through the forward proxy\"}",
+  "registryRequests": [
+    {
+      "method": "GET",
+      "url": "/forward-proxy-fixture",
+      "headers": {
+        "user-agent": "got (https://github.com/sindresorhus/got)",
+        "accept-encoding": "gzip, deflate, br",
+        "host": "127.0.0.1:1117",
+        "connection": "close"
+      }
+    },
+    {
+      "method": "GET",
+      "url": "/metadata/forward-proxy-fixture",
+      "headers": {
+        "user-agent": "got (https://github.com/sindresorhus/got)",
+        "accept-encoding": "gzip, deflate, br",
+        "host": "localhost:1117",
+        "connection": "close"
+      }
+    },
+    {
+      "method": "GET",
+      "url": "/tarball/package.tgz",
+      "headers": {
+        "user-agent": "got (https://github.com/sindresorhus/got)",
+        "accept-encoding": "gzip, deflate, br",
+        "host": "127.0.0.1:1117",
+        "connection": "close"
+      }
+    }
+  ],
+  "proxyRequests": [
+    {
+      "method": "GET",
+      "url": "http://127.0.0.1:1117/forward-proxy-fixture",
+      "headers": {
+        "user-agent": "got (https://github.com/sindresorhus/got)",
+        "accept-encoding": "gzip, deflate, br",
+        "host": "127.0.0.1:1117",
+        "proxy-authorization": "Basic cHJveHlAZXhhbXBsZTphOmIrIGMl",
+        "proxy-connection": "close",
+        "connection": "close"
+      }
+    },
+    {
+      "method": "GET",
+      "url": "http://localhost:1117/metadata/forward-proxy-fixture",
+      "headers": {
+        "user-agent": "got (https://github.com/sindresorhus/got)",
+        "accept-encoding": "gzip, deflate, br",
+        "host": "localhost:1117",
+        "proxy-authorization": "Basic cHJveHlAZXhhbXBsZTphOmIrIGMl",
+        "proxy-connection": "close",
+        "connection": "close"
+      }
+    },
+    {
+      "method": "GET",
+      "url": "http://127.0.0.1:1117/tarball/package.tgz",
+      "headers": {
+        "user-agent": "got (https://github.com/sindresorhus/got)",
+        "accept-encoding": "gzip, deflate, br",
+        "host": "127.0.0.1:1117",
+        "proxy-authorization": "Basic cHJveHlAZXhhbXBsZTphOmIrIGMl",
+        "proxy-connection": "close",
+        "connection": "close"
+      }
+    }
+  ],
+  "proxyCredentialsWereForwarded": false,
+  "proxyAuthenticationMatched": true,
+  "serversClosed": true,
+  "expectedBehaviorVerified": true
+}

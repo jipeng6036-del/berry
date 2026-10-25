@@ -1,0 +1,8 @@
+PASS packages/acceptance-tests/pkg-tests-specs/sources/proxy.test.ts (11.485 s)
+PASS packages/acceptance-tests/pkg-tests-specs/sources/https.test.js (5.572 s)
+
+Test Suites: 2 passed, 2 total
+Tests:       16 passed, 16 total
+Snapshots:   0 total
+Time:        17.197 s
+Ran all test suites matching /proxy.test|https.test/i.

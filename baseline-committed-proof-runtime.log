@@ -1,0 +1,11 @@
+{
+  "label": "baseline-committed-proof",
+  "exitCode": 1,
+  "proxyMethods": [
+    "CONNECT"
+  ],
+  "registryPaths": [],
+  "bundleSha256": "7ea8c970c4a1b55d42ff0803f30933382613f329fd916f7d3552017e323fe1f8",
+  "packageSha256": "b471d4b6940961fa08e443ff58847a15d4cbed0fd47586795c0fd3b347f87b49",
+  "serversClosed": true
+}

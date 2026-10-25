@@ -1,0 +1,10 @@
+➤ YN0000: Your PR was started right after ef16bb2 CI: Do not require tests using nightly Node.js version to pass (#7287)
+➤ YN0000: You have changed the following files since then:
+
+➤ YN0000: F:\Github-PR\inspection\heartbeat1111-yarn-http-forward-proxy\.pnp.cjs
+➤ YN0000: F:\Github-PR\inspection\heartbeat1111-yarn-http-forward-proxy\.yarn\versions\ec13895f.yml
+➤ YN0000: F:\Github-PR\inspection\heartbeat1111-yarn-http-forward-proxy\packages\acceptance-tests\pkg-tests-core\sources\utils\tests.ts
+➤ YN0000: F:\Github-PR\inspection\heartbeat1111-yarn-http-forward-proxy\packages\yarnpkg-core\package.json
+➤ YN0000: F:\Github-PR\inspection\heartbeat1111-yarn-http-forward-proxy\packages\yarnpkg-core\sources\httpUtils.ts
+➤ YN0000: F:\Github-PR\inspection\heartbeat1111-yarn-http-forward-proxy\yarn.lock
+➤ YN0000: Done in 0s 698ms

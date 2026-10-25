@@ -1,0 +1,117 @@
+{
+  "recordedAt": "2026-10-25T12:14:10.337434+00:00",
+  "commit": "f1f3454f7d4c4267527e1bee972f9a8204660349",
+  "tree": "e989302fcaa0ea4e3734a91490acd6c1316880c8",
+  "sourceClean": true,
+  "sevenSourceFiles": {
+    "packages/yarnpkg-core/sources/httpUtils.ts": {
+      "bytes": 12092,
+      "sha256": "a84fb9dacac49e517b30082e06fe39f165cdcf5083bbd57eb510e824149ae192",
+      "gitBlob": "e10143204d1e3512eed659a6a25b14c497e07194"
+    },
+    "packages/yarnpkg-core/package.json": {
+      "bytes": 2552,
+      "sha256": "ff3fbc77a5c5b4c01abb2656c551c847380246552ef0a59b53c8b8a89dbcc6ea",
+      "gitBlob": "3177343a848c63b400779e1263cbe78c1a551016"
+    },
+    "packages/acceptance-tests/pkg-tests-core/sources/utils/tests.ts": {
+      "bytes": 44318,
+      "sha256": "1893e71a7ac765ebb3e11f6054a87bd33184c5764ae38632289a6fa3201731be",
+      "gitBlob": "9ba9e3aea4bf8be8df710490c817a4efb2428f1c"
+    },
+    "packages/acceptance-tests/pkg-tests-specs/sources/proxy.test.ts": {
+      "bytes": 8209,
+      "sha256": "da99676622851eef2fe82804a507b5d824bd579d74eed47fc19dbe6899d959d0",
+      "gitBlob": "0c82db9b3880c29ca39642276255ff2255bc2dd6"
+    },
+    ".pnp.cjs": {
+      "bytes": 2625570,
+      "sha256": "c672bf304f28e40ce9e15b811a18f46e4da57b9ff262267de6bc507588bcbea2",
+      "gitBlob": "1e314839595da837fc4c453b681932a6e8336619"
+    },
+    "yarn.lock": {
+      "bytes": 810141,
+      "sha256": "f66f4248be5ec8b9267446b8de126064d489d2dcac45b1cd25881ef9ec4cd75a",
+      "gitBlob": "ae9b6ef6c1bf3db79f203913be20a89f00eb1f08"
+    },
+    ".yarn/versions/ec13895f.yml": {
+      "bytes": 927,
+      "sha256": "aca6af1dacbe2bd3a9f25002140d29cea267d33bf3120e12026ef2b8516fd938",
+      "gitBlob": "dbd3afe688dd467c6da623528de0b5300a4e4a6f"
+    }
+  },
+  "candidateBundle": "candidate-committed-yarn.cjs",
+  "candidateBundleSha256": "fde7c8f01a3778046a6b60971748cf286193dfa78a4de43a8bb310e40fa74b3f",
+  "harnessSha256": "f5d5f4f8a81af7a6bc13a03afee19a4f2d3840fdd5359121098267166d24aa44",
+  "fixtureSha256": "b471d4b6940961fa08e443ff58847a15d4cbed0fd47586795c0fd3b347f87b49",
+  "buildExit": 0,
+  "runtimeHarnessExits": {
+    "candidate": 0,
+    "authRedirect": 0,
+    "baseline": 0
+  },
+  "receipts": {
+    "baseline-committed-proof": {
+      "exitCode": 1,
+      "bundleSha256": "7ea8c970c4a1b55d42ff0803f30933382613f329fd916f7d3552017e323fe1f8",
+      "expectedBehaviorVerified": true,
+      "serversClosed": true,
+      "proxyAuthenticationMatched": true,
+      "proxyCredentialsWereForwarded": false,
+      "command": [
+        "E:\\Nodejs\\node.exe",
+        "F:\\Github-PR\\ci-evidence\\heartbeat1111-runtime-local\\runtime.cjs",
+        "baseline-committed-proof",
+        "F:\\Github-PR\\ci-evidence\\heartbeat1111-runtime-local\\baseline-yarn.cjs"
+      ]
+    },
+    "candidate-committed-proof": {
+      "exitCode": 0,
+      "bundleSha256": "fde7c8f01a3778046a6b60971748cf286193dfa78a4de43a8bb310e40fa74b3f",
+      "expectedBehaviorVerified": true,
+      "serversClosed": true,
+      "proxyAuthenticationMatched": true,
+      "proxyCredentialsWereForwarded": false,
+      "command": [
+        "E:\\Nodejs\\node.exe",
+        "F:\\Github-PR\\ci-evidence\\heartbeat1111-runtime-local\\runtime.cjs",
+        "candidate-committed-proof",
+        "F:\\Github-PR\\ci-evidence\\heartbeat1111-runtime-local\\candidate-committed-yarn.cjs"
+      ]
+    },
+    "candidate-committed-auth": {
+      "exitCode": 0,
+      "bundleSha256": "fde7c8f01a3778046a6b60971748cf286193dfa78a4de43a8bb310e40fa74b3f",
+      "expectedBehaviorVerified": true,
+      "serversClosed": true,
+      "proxyAuthenticationMatched": true,
+      "proxyCredentialsWereForwarded": false,
+      "command": [
+        "E:\\Nodejs\\node.exe",
+        "F:\\Github-PR\\ci-evidence\\heartbeat1111-runtime-local\\runtime.cjs",
+        "candidate-committed-auth",
+        "F:\\Github-PR\\ci-evidence\\heartbeat1111-runtime-local\\candidate-committed-yarn.cjs",
+        "auth-redirect"
+      ]
+    }
+  },
+  "nativeAcceptance": {
+    "command": "TEST_BINARY=<candidate-committed-yarn.cjs> node ./scripts/run-yarn.js test:integration proxy.test https.test --runInBand --json --outputFile=<evidence>",
+    "TEST_BINARY": "F:\\Github-PR\\ci-evidence\\heartbeat1111-runtime-local\\candidate-committed-yarn.cjs",
+    "exitCode": 0,
+    "suites": 2,
+    "passed": 16,
+    "failed": 0,
+    "json": "candidate-committed-proxy-https.json",
+    "log": "candidate-committed-proxy-https.log"
+  },
+  "buildCommand": "node ./scripts/run-yarn.js build:cli",
+  "logs": {
+    "candidate-committed-build-cli.log": "bb255f48e2e61bfb3575bb047448c427357363dedc2e0e44d51e39446fb4bfcd",
+    "baseline-committed-proof-runtime.log": "b4a662108d59c0c9dd717614d365279c6e0fd01dde9ab066a49eaa793b9f2d23",
+    "candidate-committed-proof-runtime.log": "11c75922347a1e6d0c49fe20abbf17ada78b79d7821c954451a2797e17347690",
+    "candidate-committed-auth-runtime.log": "7bbcf9b16f10a175f5eee611ca15347fcb96b0bf1c0993a4175f5c1094995127",
+    "candidate-committed-proxy-https.log": "6395ae3b7c43176219b81d4937fe56b37c84c9ebb76a04418812dec9bba37e85"
+  },
+  "checkedAt": "2026-10-25T12:14:52.510126+00:00"
+}

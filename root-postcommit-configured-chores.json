@@ -1,0 +1,74 @@
+{
+  "atUtc": "2026-10-25T12:12:10.631791+00:00",
+  "base": "ef16bb2e5826f2b4c342f387e4ac50fea86d4a51",
+  "head": "f1f3454f7d4c4267527e1bee972f9a8204660349",
+  "workflowSha256": "49ccaa9e384f9d56ff03d60f396f6bdfc44431e71703fa162e79fa126cd5e6aa",
+  "records": [
+    {
+      "name": "Check that the cache files are consistent with their remote sources",
+      "configuredCommand": "if [[ $(git diff --name-only \"$(git merge-base origin/\"$TARGET_BRANCH\" HEAD)\" HEAD -- '.yarn/cache' 'packages/yarnpkg-libzip' | wc -l) -gt 0 ]]; then\n  node ./scripts/run-yarn.js --immutable --immutable-cache --check-cache\nfi",
+      "exit": 0,
+      "stdout": "",
+      "stderr": "",
+      "classification": "NOT_APPLICABLE matchedPaths=0; exact configured shell conditional exit0"
+    },
+    {
+      "name": "Check that the patch files are consistent with fresh builds",
+      "configuredCommand": "if [[ $(git diff --name-only \"$(git merge-base origin/\"$TARGET_BRANCH\" HEAD)\" HEAD -- packages/plugin-compat/sources/patches | wc -l) -gt 0 ]]; then\n  for generator in packages/plugin-compat/extra/*/gen-*-patch.sh; do\n    bash $generator;\n  done\n  for generator in packages/plugin-compat/extra/*/gen-*-patch.js; do\n    yarn node $generator;\n  done\n  [[ $(git diff --name-only packages/plugin-compat/sources/patches \"packages/plugin-compat/extra/typescript/patch*\" | tee /dev/stderr | wc -l) -eq 0 ]]\nfi",
+      "exit": 0,
+      "stdout": "",
+      "stderr": "",
+      "classification": "NOT_APPLICABLE matchedPaths=0; exact configured shell conditional exit0"
+    },
+    {
+      "name": "Check that libzip artifacts are consistent with a fresh build (fix w/ \"git merge master && bash packages/yarnpkg-libzip/artifacts/build.sh\")",
+      "configuredCommand": "if [[ $(git diff --name-only \"$(git merge-base origin/\"$TARGET_BRANCH\" HEAD)\" HEAD -- 'packages/yarnpkg-libzip/artifacts' 'packages/yarnpkg-libzip/sources/*.js' | wc -l) -gt 0 ]]; then\n  bash packages/yarnpkg-libzip/artifacts/build.sh\n  [[ $(git diff --name-only 'packages/yarnpkg-libzip/artifacts' 'packages/yarnpkg-libzip/sources/*.js' | wc -l) -eq 0 ]]\nfi",
+      "exit": 0,
+      "stdout": "",
+      "stderr": "",
+      "classification": "NOT_APPLICABLE matchedPaths=0; exact configured shell conditional exit0"
+    },
+    {
+      "name": "Check that the PnP hooks are consistent with a fresh build (fix w/ \"git merge master && yarn update:pnp:hook\")",
+      "configuredCommand": "if [[ $(git diff --name-only \"$(git merge-base origin/\"$TARGET_BRANCH\" HEAD)\" HEAD -- 'packages/yarnpkg-{fslib,libzip,pnp}/sources/**/*' | wc -l) -gt 0 ]]; then\n  node ./scripts/run-yarn.js build:pnp:hook\n  [[ $(git diff --name-only packages/yarnpkg-pnp/sources/{hook.js,esm-loader/built-loader.js} | wc -l) -eq 0 ]]\nfi",
+      "exit": 0,
+      "stdout": "",
+      "stderr": "",
+      "classification": "NOT_APPLICABLE matchedPaths=0; exact configured shell conditional exit0"
+    },
+    {
+      "name": "Check that the Zip worker is consistent with a fresh build (fix w/ \"git merge master && yarn update:zip:worker\")",
+      "configuredCommand": "if [[ $(git diff --name-only \"$(git merge-base origin/\"$TARGET_BRANCH\" HEAD)\" HEAD -- 'packages/yarnpkg-{fslib,libzip,core}/sources/**/*' | wc -l) -gt 0 ]]; then\n  node ./scripts/run-yarn.js build:zip:worker\n  [[ $(git diff --name-only packages/yarnpkg-core/sources/worker-zip/index.js | wc -l) -eq 0 ]]\nfi",
+      "exit": 0,
+      "stdout": "",
+      "stderr": "",
+      "classification": "NOT_APPLICABLE matchedPaths=0; exact configured shell conditional exit0"
+    },
+    {
+      "name": "Check that the pluginCommands file is consistent with a fresh build (fix w/ \"yarn build:plugin-commands\")",
+      "configuredCommand": "if [[ $(git diff --name-only \"$(git merge-base origin/\"$TARGET_BRANCH\" HEAD)\" HEAD -- packages/yarnpkg-cli/sources/pluginCommands.ts 'packages/*/sources/commands/**/*' | wc -l) -gt 0 ]]; then\n  node ./scripts/run-yarn.js build:plugin-commands\n  [[ $(git diff --name-only packages/yarnpkg-cli/sources/pluginCommands.ts | tee /dev/stderr | wc -l) -eq 0 ]]\nfi",
+      "exit": 0,
+      "stdout": "",
+      "stderr": "",
+      "classification": "NOT_APPLICABLE matchedPaths=0; exact configured shell conditional exit0"
+    },
+    {
+      "name": "Check that the grammars are consistent with fresh builds (fix w/ \"yarn grammar:all\")",
+      "configuredCommand": "if [[ $(git diff --name-only \"$(git merge-base origin/\"$TARGET_BRANCH\" HEAD)\" HEAD -- 'packages/yarnpkg-parsers/sources/grammars/*.{pegjs,js}' | wc -l) -gt 0 ]]; then\n  node ./scripts/run-yarn.js grammar:all\n  [[ $(git diff --name-only packages/yarnpkg-parsers/sources/grammars/*.js | tee /dev/stderr | wc -l) -eq 0 ]]\nfi",
+      "exit": 0,
+      "stdout": "",
+      "stderr": "",
+      "classification": "NOT_APPLICABLE matchedPaths=0; exact configured shell conditional exit0"
+    },
+    {
+      "name": "Check for outdated e2e status list (fix w/ \"node ./scripts/generate-e2e-status-list.mjs\")",
+      "configuredCommand": "node ./scripts/generate-e2e-status-list.mjs\ngit diff --exit-code",
+      "exit": 0,
+      "stdout": "README.md is already up to date\n",
+      "stderr": "",
+      "classification": "PASS exact configured generator and clean diff"
+    }
+  ],
+  "sourceClean": true,
+  "note": "Original CI configuration executed without edits. Conditional checks are N/A, not claims that their generators were run or green."
+}

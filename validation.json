@@ -1,0 +1,111 @@
+{
+  "base": "ef16bb2e5826f2b4c342f387e4ac50fea86d4a51",
+  "candidate": "f1f3454f7d4c4267527e1bee972f9a8204660349",
+  "candidateTree": "e989302fcaa0ea4e3734a91490acd6c1316880c8",
+  "recordedAtUtc": "2026-10-25T12:16:56.723792+00:00",
+  "environment": "Windows x64 / Node.js24.14.0",
+  "checks": [
+    {
+      "name": "build-cli",
+      "command": "node ./scripts/run-yarn.js build:cli",
+      "log": "candidate-final-build-cli.log",
+      "exitCode": 0,
+      "observation": "exec result af2ef3",
+      "logSha256": "d8af9646f785d845327f4b26dad7a58efa4c49da6985ffac9df0c20138d393a0"
+    },
+    {
+      "name": "lint",
+      "command": "node ./scripts/run-yarn.js test:lint",
+      "log": "candidate-final-lint.log",
+      "exitCode": 0,
+      "observation": "exec session 88568 completion",
+      "logSha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "name": "typecheck",
+      "command": "node ./scripts/run-yarn.js typecheck:all",
+      "log": "candidate-final-typecheck.log",
+      "exitCode": 0,
+      "observation": "exec session 51613 completion",
+      "logSha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "name": "immutable",
+      "command": "node ./scripts/run-yarn.js --immutable --immutable-cache",
+      "log": "candidate-final-immutable.log",
+      "exitCode": 0,
+      "observation": "metadata-gates-first.json immutable=0",
+      "logSha256": "e7b56eed6d040422fbb6bf3f08c6cbae3edcc5af7f43a948b7152c921377e19a"
+    },
+    {
+      "name": "dedupe",
+      "command": "node ./scripts/run-yarn.js dedupe --check",
+      "log": "candidate-final-dedupe.log",
+      "exitCode": 0,
+      "observation": "metadata-gates-first.json dedupe=0",
+      "logSha256": "ce39bac830f5ed9ca7aeb6fe14748a0a14adc7e82fb1df78b3565fc8ff21efe4"
+    },
+    {
+      "name": "constraints",
+      "command": "node ./scripts/run-yarn.js constraints",
+      "log": "candidate-final-constraints.log",
+      "exitCode": 0,
+      "observation": "metadata-gates-final.json constraints=0",
+      "logSha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "name": "version",
+      "command": "node ./scripts/run-yarn.js version check",
+      "log": "candidate-final-version.log",
+      "exitCode": 0,
+      "observation": "version-worker-gates.json version=0",
+      "logSha256": "7fd7cbf63d3ae3eee1556574a14cb9f863d75f606eb4018935e98d307c294a93"
+    },
+    {
+      "name": "core-unit",
+      "command": "node ./scripts/run-yarn.js test:unit yarnpkg-core --runInBand --json --outputFile=<evidence>/candidate-final-core-unit.json",
+      "log": "candidate-frozen-core-unit.log",
+      "exitCode": 0,
+      "observation": "exec f00c29 actual exit0; 13 suites/164 PASS after exact worker restoration",
+      "logSha256": "d6b29e505b290d7fbcaf14c39b6815304ef04448df8c4b204b0177888b1d7dd4"
+    },
+    {
+      "name": "proxy-https",
+      "command": "node ./scripts/run-yarn.js test:integration proxy.test https.test --runInBand",
+      "log": "candidate-final-proxy-https.log",
+      "exitCode": 0,
+      "observation": "exec session 72467 completion: 16 passed",
+      "logSha256": "a2cc42398c0ea4e57e8821be50fef83211cb34777441fbb843384fbd4c75766f"
+    },
+    {
+      "name": "baseline-final-fixtures",
+      "command": "TEST_BINARY=<baseline bundle> node ./scripts/run-yarn.js test:integration proxy.test --runInBand -t forward-only --json --outputFile=<evidence>/baseline-final-fixtures.json",
+      "log": "baseline-final-fixtures.log",
+      "exitCode": 1,
+      "observation": "exec session 85187 completion; negative=2 failed expected",
+      "logSha256": "790acc32c078395dfc2c54f048fad472d1a7d94176b59a60fff3011ea57f1ddb"
+    }
+  ],
+  "ciConditionals": "root-postcommit-configured-chores.json",
+  "coreUnit": {
+    "passed": 164,
+    "failed": 0,
+    "log": "candidate-frozen-core-unit.log"
+  },
+  "nativeAcceptance": {
+    "command": "TEST_BINARY=<candidate-committed-yarn.cjs> node ./scripts/run-yarn.js test:integration proxy.test https.test --runInBand --json --outputFile=<evidence>",
+    "TEST_BINARY": "F:\\Github-PR\\ci-evidence\\heartbeat1111-runtime-local\\candidate-committed-yarn.cjs",
+    "exitCode": 0,
+    "suites": 2,
+    "passed": 16,
+    "failed": 0,
+    "json": "candidate-committed-proxy-https.json",
+    "log": "candidate-committed-proxy-https.log"
+  },
+  "notRun": [
+    "hosted CI before opening the PR",
+    "full multi-OS matrix",
+    "unrelated external-framework E2E suites"
+  ],
+  "data": "Synthetic loopback proxy/registry/tarball only; all supplied credentials are fixture strings."
+}
